@@ -1,0 +1,34 @@
+{
+    "routing": [
+        "core:model_router",
+        "core:routing"
+    ],
+    "governance": [
+        "gov:ledger",
+        "gov:policy"
+    ],
+    "ledger": [
+        "mesh:ledger",
+        "mesh:settlement"
+    ],
+    "agents": [
+        "agents:orchestrator",
+        "agents:worker"
+    ],
+    "memory": [
+        "memory:timeline",
+        "memory:retrieval"
+    ],
+    "trading": [
+        "trading:signals",
+        "trading:risk"
+    ],
+    "rl": [
+        "rl:reward",
+        "rl:env"
+    ],
+    "security": [
+        "sec:hardening",
+        "sec:threats"
+    ]
+}

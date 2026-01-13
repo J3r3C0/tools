@@ -1,0 +1,46 @@
+{
+    "issue": {
+        "week": 2,
+        "year": 2026,
+        "generated_at": "2026-01-13T12:00:00Z",
+        "schema_version": "weekly_intel_v1",
+        "source_inputs": [
+            "data/in/example.pdf"
+        ]
+    },
+    "highlights": [
+        "Example highlight 1",
+        "Example highlight 2"
+    ],
+    "entries": [
+        {
+            "id": "KW02_2026_001",
+            "title": "Example Entry",
+            "summary": "Short summary of the item extracted from the weekly input.",
+            "why_relevant": "Why this matters for Sheratan (routing/governance/ledger/agents).",
+            "relevance": "HIGH",
+            "confidence": 0.78,
+            "tags": [
+                "routing",
+                "agents"
+            ],
+            "domains": [
+                "core:model_router",
+                "agents:orchestrator"
+            ],
+            "links": [
+                "https://example.com"
+            ],
+            "signals": {
+                "routing": true,
+                "agents": true
+            }
+        }
+    ],
+    "stats": {
+        "count_total": 1,
+        "count_high": 1,
+        "count_medium": 0,
+        "count_low": 0
+    }
+}
