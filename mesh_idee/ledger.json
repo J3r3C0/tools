@@ -1,0 +1,121 @@
+{
+  "accounts": {
+    "mesh_provider": {
+      "balance": 0,
+      "created_at": "2025-12-07T04:28:42.889750Z",
+      "meta": {}
+    },
+    "alice": {
+      "balance": 30,
+      "created_at": "2025-12-07T04:28:42.901127Z",
+      "meta": {}
+    },
+    "system": {
+      "balance": 999999999999999800,
+      "created_at": "2025-12-07T04:29:28.386175Z",
+      "meta": {}
+    },
+    "provider": {
+      "balance": 0,
+      "created_at": "2025-12-07T06:12:20.669387Z",
+      "meta": {}
+    },
+    "default_worker": {
+      "balance": 270,
+      "created_at": "2025-12-18T11:40:10.775552Z",
+      "meta": {}
+    }
+  },
+  "transfers": [
+    {
+      "id": "abfd2f66-e200-40dd-a005-73a74f210561",
+      "timestamp": "2025-12-07T04:29:28.386175Z",
+      "from_account": "system",
+      "to_account": "alice",
+      "amount": 200,
+      "job_id": null,
+      "note": "Testing credit system"
+    },
+    {
+      "id": "b4e9fba5-c9e2-45ff-b413-650f35071e62",
+      "timestamp": "2025-12-18T11:40:10.775552Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "94a5594b-afe6-45cf-8a30-63996986e0b4",
+      "note": null
+    },
+    {
+      "id": "e4c59bd2-c8b5-432b-bb77-bc14a3fa4269",
+      "timestamp": "2025-12-18T11:41:45.126079Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "10bfa43f-670e-4c74-9725-38ad4982fdea",
+      "note": null
+    },
+    {
+      "id": "574b156e-aa87-4139-b414-c6a5612ef164",
+      "timestamp": "2025-12-18T13:53:39.332329Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "1c8dec58-f89a-45cc-871f-629b3a2bd192",
+      "note": null
+    },
+    {
+      "id": "fa4ca255-97a5-47aa-9bc7-549345b4f9b2",
+      "timestamp": "2025-12-18T14:01:00.435944Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "6f80942d-3f74-406b-8be1-81711f0e5bcc",
+      "note": null
+    },
+    {
+      "id": "162de864-f4e7-4111-864f-b9f3f9992657",
+      "timestamp": "2025-12-18T14:53:47.851728Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "da64b422-b835-485a-a418-7ae054e7c57c",
+      "note": null
+    },
+    {
+      "id": "fec96443-10a1-4a65-9be8-678ae19a7ebf",
+      "timestamp": "2025-12-18T15:25:49.282610Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "8265c191-0594-425c-a3da-9e9bd4b560ed",
+      "note": null
+    },
+    {
+      "id": "6b1adec7-2bed-4574-a845-2e5028ea54ec",
+      "timestamp": "2025-12-18T16:42:42.890228Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "82b6d738-0aef-4f0f-adf4-e0a0c59d0646",
+      "note": null
+    },
+    {
+      "id": "563bb7a2-9aad-45d8-82c6-583fd820f2d0",
+      "timestamp": "2025-12-18T18:03:09.422385Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "aab7d542-34c4-49ad-b558-c3beeb5ee6a5",
+      "note": null
+    },
+    {
+      "id": "1b7dbc41-65da-4f04-8395-2884f135b218",
+      "timestamp": "2025-12-18T18:23:33.317744Z",
+      "from_account": "alice",
+      "to_account": "default_worker",
+      "amount": 30,
+      "job_id": "ea092bbf-40f0-4095-b82d-c140389678b6",
+      "note": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "accounts": {
+    "mesh_provider": {
+      "balance": 0,
+      "created_at": "2025-12-07T06:12:56.107801Z",
+      "meta": {}
+    },
+    "alice": {
+      "balance": 90,
+      "created_at": "2025-12-07T06:12:56.110122Z",
+      "meta": {}
+    },
+    "provider": {
+      "balance": 10,
+      "created_at": "2025-12-07T06:12:56.114327Z",
+      "meta": {}
+    }
+  },
+  "transfers": [
+    {
+      "id": "78a0e9d0-dae2-48b7-a127-f9d4999854c1",
+      "timestamp": "2025-12-07T06:12:56.118336Z",
+      "from_account": "alice",
+      "to_account": "provider",
+      "amount": 10,
+      "job_id": "job_test_1",
+      "note": null
+    }
+  ]
+}

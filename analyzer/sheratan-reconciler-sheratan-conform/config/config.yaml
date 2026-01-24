@@ -1,0 +1,48 @@
+merge_strategy: newest
+backup_originals: true
+output_directory: ./sheratan-unified
+ignore_patterns:
+- '*.pyc'
+- '*.pyo'
+- __pycache__
+- .git
+- .gitignore
+- '*.log'
+- venv/
+- env/
+- .env
+- node_modules/
+- '*.egg-info'
+- .pytest_cache
+- .coverage
+- htmlcov/
+critical_files:
+- core.py
+- orchestrator.py
+- config.py
+- requirements.txt
+analyze_extensions:
+- .py
+- .yaml
+- .yml
+- .json
+- .ini
+- .toml
+- .txt
+- .md
+reporting:
+  format: markdown
+  include_diffs: true
+  max_diff_lines: 100
+  show_identical_files: false
+output:
+  format: json
+  path: reconciler_report.json
+  exit_codes:
+    clean: 0
+    drift_detected: 10
+    critical: 20
+agent:
+  mode: lcp_worker
+  baseline_required: true
+  strict: false

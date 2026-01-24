@@ -1,0 +1,72 @@
+# Merge Priority Rules for Sheratan Version Reconciler
+
+# File-specific merge strategies
+file_priorities:
+  # Python files: prefer version with most complete implementation
+  "*.py": newest_with_most_functions
+  
+  # Configuration files: merge keys intelligently
+  "*.yaml": merge_keys
+  "*.yml": merge_keys
+  "*.json": merge_keys
+  "*.toml": merge_keys
+  
+  # Environment files: require manual review
+  ".env": manual_review
+  "*.env": manual_review
+  
+  # Dependencies: union of all versions
+  "requirements.txt": union_of_all
+  "package.json": union_of_all
+  
+  # Documentation: prefer newest
+  "*.md": newest
+  "*.txt": newest
+  
+  # Scripts: manual review for conflicts
+  "*.sh": manual_review
+  "*.ps1": manual_review
+  "*.bat": manual_review
+
+# Directory-specific rules
+directory_priorities:
+  # Core system files: careful merge
+  "core/": manual_review
+  "mesh/": manual_review
+  
+  # Configuration: merge intelligently
+  "config/": merge_keys
+  
+  # Tests: union of all
+  "tests/": union_of_all
+  "test/": union_of_all
+  
+  # Documentation: prefer newest
+  "docs/": newest
+  "doc/": newest
+  
+  # Temporary/cache: ignore
+  "__pycache__/": ignore
+  ".pytest_cache/": ignore
+  "venv/": ignore
+
+# Conflict resolution strategies
+conflict_resolution:
+  # For code conflicts
+  code:
+    strategy: ast_aware  # Use AST comparison
+    prefer: most_complete  # Prefer version with more functionality
+    
+  # For configuration conflicts
+  config:
+    strategy: merge_keys
+    on_key_conflict: prompt  # Ask user for conflicting keys
+    
+  # For binary files
+  binary:
+    strategy: newest
+    
+  # For documentation
+  documentation:
+    strategy: newest
+    combine_if_different: true  # Create combined version if significantly different

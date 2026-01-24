@@ -1,0 +1,12 @@
+# Mesh Fake Ledger Requirements
+
+# CLI interface
+click>=8.1.0
+
+# HTTP API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+
+# HTTP client (for LedgerClient in HTTP mode)
+requests>=2.31.0
